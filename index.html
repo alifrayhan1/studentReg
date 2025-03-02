@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main>
+      <header class="bg-gray-100">
+        <div class="px-10">
+          <div class="flex justify-between border-b border-gray-400">
+            <img src="image/image.png" alt="" class="w-24 h-auto" />
+            <img src="image/image1.png" alt="" class="w-24 h-auto" />
+            <img src="image/image2.png" alt="" class="w-24 h-auto" />
+          </div>
+
+          <nav>
+            <ul class="flex justify-between font-semibold py-2">
+              <li class="hover:bg-gray-400 p-0.5"><a href="#">Home</a></li>
+              <li class="hover:bg-gray-400 p-0.5">
+                <a href="#">Course Module</a>
+              </li>
+              <li class="hover:bg-gray-400 p-0.5">
+                <a href="#">Class Schedule</a>
+              </li>
+              <li class="hover:bg-gray-400 p-0.5">
+                <a href="#">Success Story</a>
+              </li>
+              <li class="hover:bg-gray-400 p-0.5">
+                <a href="#">Attendance</a>
+              </li>
+              <li class="hover:bg-gray-400 p-0.5"><a href="#">FAQ</a></li>
+              <li class="hover:bg-gray-400 p-0.5"><a href="#">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <form class="px-10 py-4">
+        <h1
+          class="border-b border-gray-400 font-semibold text-xl text-amber-500"
+        >
+          Student Registration From
+        </h1>
+        <h2 class="text-lg py-4">Please Enter Relent Information</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="border border-gray-400 p-2 space-y-2">
+            <h3 class="text-sm text-gray-600">Mandatory Field *</h3>
+            <div class="flex flex-col">
+              <label for="distirct" class="font-semibold"
+                >Institute District *</label
+              >
+              <select name="" id="distirct" class="border">
+                <option value="" selected disabled>--Select One--</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="sirajganj">Sirajganj</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="course" class="font-semibold">Course</label>
+              <select name="" id="course" class="border">
+                <option value="" selected disabled>--Select One--</option>
+                <option value="WebDevelopment">
+                  Web Design And Development
+                </option>
+                <option value="graphicDesign">Graphic |Design</option>
+                <option value="digitalMarketing">Digital Marketing</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="studentName" class="font-semibold"
+                >Student Name *</label
+              >
+              <input type="text" name="" id="studentName" class="border" />
+            </div>
+            <div class="flex flex-col">
+              <label for="fatherName" class="font-semibold"
+                >Father Name *</label
+              >
+              <input type="text" name="" id="fatherName" class="border" />
+            </div>
+            <div class="flex flex-col">
+              <label for="motherName" class="font-semibold"
+                >Mother Name *</label
+              >
+              <input type="text" name="" id="motherName" class="border" />
+            </div>
+            <div class="flex flex-col">
+              <label for="dateOfBirth" class="font-semibold"
+                >Date Of Birth *</label
+              >
+
+              <input type="date" name="" id="dateOfBirth" class="border" />
+            </div>
+            <div class="flex flex-col">
+              <label for="gender" class="font-semibold">Gender *</label>
+              <div class="flex gap-5">
+                <div>
+                  <input type="radio" name="gender" id="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div>
+                  <input type="radio" name="gender" id="female" />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for="leteracy" class="font-semibold"
+                >Did you participate in 15 days literacy training of LEDP? (Only
+                for Female)</label
+              >
+              <div class="flex gap-5">
+                <div>
+                  <input type="radio" name="leteracy" id="yes" />
+                  <label for="yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" name="leteracy" id="no" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for="handicapped" class="font-semibold"
+                >Physically Handicapped *</label
+              >
+              <div class="flex gap-5">
+                <div>
+                  <input type="radio" name="handicapped" id="yes1" />
+                  <label for="yes1">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" name="handicapped" id="no1" />
+                  <label for="no1">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="font-semibold">Email *</label>
+              <input type="email" name="" id="email" class="border" />
+            </div>
+            <div class="flex flex-col">
+              <label for="phone" class="font-semibold"
+                >Phone(11 Digits) *</label
+              >
+              <input type="tel" name="" id="phone" class="border" />
+            </div>
+          </div>
+          <div class="border border-gray-400 p-2 space-y-2">
+            <div class="flex flex-col">
+              <label for="indentification" class="font-semibold"
+                >Identification Type *</label
+              >
+              <select name="" id="indentification" class="border">
+                <option value="" disabled selected>--Select One--</option>
+                <option value="nationalId">National Id</option>
+                <option value="birth">Birth Certificate</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="idNumber" class="font-semibold"
+                >Identification No. *
+              </label>
+              <input
+                type="number"
+                name=""
+                id="idNumber"
+                placeholder="10 or 17 digits"
+                class="border"
+              />
+              <p class="text-sm text-gray-600 font-light">
+                If 13 digits, add birth year (e.g., 1980XXXXXXXXXXXXX).
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <label for="homeDistrict" class="font-semibold"
+                >Home District *</label
+              >
+              <select name="" id="homeDistrict" class="border">
+                <option value="" disabled selected>--Select One--</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="sirajganj">Sirajganj</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="upazilla" class="font-semibold">Upazilla *</label>
+              <select name="" id="upazilla" class="border">
+                <option value="" disabled selected>--Select One--</option>
+                <option value="belkuchi">Belkuchi</option>
+                <option value="cauhali">Cauhali</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="village" class="font-semibold"
+                >Village/House No./Road No./Other Alternative *</label
+              >
+              <input type="text" name="" id="village" class="border" />
+            </div>
+
+            <div class="flex flex-col">
+              <label for="postOffice" class="font-semibold"
+                >Post Office *</label
+              >
+              <input type="text" name="" id="postOffice" class="border" />
+            </div>
+            <div class="flex flex-col">
+              <label for="eduQualification" class="font-semibold">Educational Qualification *</label>
+              <select name="" id="eduQualification" class="border">
+                <option value="ssc">SSC</option>
+                <option value="hsc">HSC</option>
+                <option value="bsc">BSC</option>
+                <option value="msc">MSC</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="computer" class="font-semibold"
+                >Do you have any computer? *</label
+              >
+              <div>
+                <input type="radio" name="" id="yesC" />
+                <label for="yesC">Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="" id="noC" />
+                <label for="noC">No</label>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for="photograph" class="font-bold">Photograph *</label>
+              <input type="file" name="" id="photograph" class="border" />
+              <p class="font-extralight text-gray-400 text-sm">
+                File type: jpg, jpeg, png. Max size: 2MB.
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <label for="signature">Signature *</label>
+              <input type="file" name="" id="signature">
+              <p class="font-extralight text-gray-400 text-sm">
+                File type: jpg, jpeg, png. Max size: 2MB.
+              </p>
+            </div>
+            <button type="submit" class="bg-gray-200 border border-gray-400 p-0.5">Submit Data</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
